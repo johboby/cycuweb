@@ -1,248 +1,151 @@
-# 公司：尘渊文化
-
-### 技术方向：时序AI；具身智能；因果表征；人文智能等
-
-## 企业资质：
-
-samho开源国际设计创意社区创始人
-
-ModelScope魔搭社区国际站合作伙伴
-
-四川省西部专精特新企业联盟成员
-
-党校校企合作优秀单位
-
-商业学术领先企业
-
-人工智能 元认知研发重点企业
-
-AI+交叉学科专项研究单位
-
-
-
-## 介绍：
-
-作为数据驱动时代的战略级智囊平台，「尘渊·无界智策」深度融合人工智能、深度学习、量子计算及多模态分析技术，致力于为企业提供从数据挖掘到商业决策的全链路解决方案。通过构建智能模型与高价值数据集，我们赋能客户在复杂市场环境中实现精准洞察、动态优化与前沿技术布局。  
-
-### 一、技术架构优势
-
-融合钱学森系统科学与德里达解构主义，构建可验证的五层级科学架构。
-
-1. **混合专家模型（MoE）赋能决策分析**  
-   采用动态参数激活机制与异步训练策略，实现670亿参数规模的分布式布局。每次推理仅调用15%-20%参数，在保持450 tokens/s处理速度的同时，显著提升多任务场景下的分析精度（较传统模型提升12.7% BLEU评分）。该架构通过专家模块的梯度分配策略，高频商业问题匹配高密度参数集群，长尾需求则由轻量化模块精准响应。
-
-2. **汉字AI图谱与概念模型融合**  
-   构建三级语义解析体系：  
-
-- **字形解析层**：CNN网络提取汉字象形特征，建立"图像语义向量"数据库  
-- **概念关联层**：基于《说文解字》数字化资源，形成动态更新的概念知识图谱  
-- **语境理解层**：MoE架构下的多专家协同，解决中文多义性问题（如"花"的7种语义场景）  
-
-3. **语言模型工业化应用**  
-   开发256K tokens超长文本处理能力，支持复杂商业文档的语义解构。通过跨文档实体识别技术，实现行业报告的关键信息抽取效率提升300%，特别适用于上市公司财报分析与竞品情报挖掘。
-
-### 二、定制化服务矩阵
-
-| 服务模块       | 技术实现                    | 商业价值                    |
-| -------------- | --------------------------- | --------------------------- |
-| 行业趋势预测   | 时序分析+行业知识图谱推理   | 准确率较传统模型提升22%     |
-| 消费者行为建模 | 多模态日志分析+隐马尔可夫链 | 用户生命周期价值预测误差≤8% |
-| 市场竞争模拟   | 博弈论模型+蒙特卡洛仿真     | 策略预演置信度达91%         |
-| 供应链优化     | 运筹学算法+实时物流数据融合 | 库存周转率优化15%-28%       |
-
-
-
-## 项目案例：
-
-### 因果发现AI案例：
-
-https://github.com/johboby/AI-causal-discovery-network-implementation
-
-
-
-### Hierarchical Reasoning Model (HRM) / 分层推理模型
-
-https://github.com/johboby/Hierarchical
-
-#### 尘渊·无界智策通过文明算法融合框架（CAF）
-
-##### 文明演化AI系统：
-
-https://github.com/johboby/Civilization
-
-实现古今智慧与现代科技的共振。我们以「九章算术」为起点构建跨文明决策模型，通过三维算法集成体系： 
-1 历史算法复原层：解码古代数学典籍计算范式 
-2 多智能体模拟层：MAS技术实现社会经济动态推演 
-3 宇宙认知扩展层：CEDS建模时空-物质-熵纠缠
-
-
-
-#### 全球价值链重塑：2024年中国工业发展现状深研与未来展望
-
-https://mp.weixin.qq.com/s/9Uv7UmJbzy9AQ9emBtfiqA
-
-#### 中国城市文化研究的多维探索与深层发展
-
-https://mp.weixin.qq.com/s/eZELg5N526aQ6CXAb_4J0g
-
-#### 新质生产力分析平台：技术架构、功能与应用研究
-
-https://mp.weixin.qq.com/s/q6HymkUNoRQJn8gf-yU_iw
-
-- **创新驱动**：研发投入占比高（≥3%GDP）
-- **数字赋能**：数字经济渗透率突破40%
-- **绿色低碳**：单位GDP碳排放强度下降30%
-- **高效协同**：资源配置效率提升25%以上
-
-#### 碳排放智能分析与优化：技术路径、场景应用与挑战
-
-https://mp.weixin.qq.com/s/qPcukA00DHd76ByCfTliFw
-
-CarbonChat系统的架构创新标志着LLM在碳排放分析中的突破。该系统采用检索增强生成（RAG）框架，将IPCC报告、国家气候政策文本等非结构化数据转化为知识图谱，通过以下机制提升分析可靠性：
-
-- **意图识别模块**：基于BERT的微调模型对用户查询（如"钢铁行业减排路径"）进行实体识别和关系抽取，准确率达92.3%。
-- **幻觉检测机制**：引入双重验证流程，首先通过Text2SQL将自然语言转换为结构化查询，再与知识库中的权威数据（如国家统计局能源平衡表）进行交叉验证。实验显示，该机制将错误推论比例从15.4%压缩至2.7%。
-
-#### 易经占卜系统的数字化重构：从符号逻辑到认知映射的跨学科探索
-
-https://mp.weixin.qq.com/s/igNdpjM6SS16MNVMkIUc_Q
-
-现代算法采用蒙特卡洛方法模拟占卜过程，通过伪随机数生成器（PRNG）实现均匀分布。某知名易学平台的基准测试显示，基于Mersenne Twister算法的起卦系统，在10^8次试验中各爻出现频率标准差仅为0.0002，显著优于传统方法（0.015）。  
-
-#### 创意经济：技术驱动与多维融合的未来图景
-
-https://mp.weixin.qq.com/s/QiUjuHApOyno1hdjcVNIeg
-
-生成式AI的崛起正以惊人的速度重塑创意产业的传统格局。这种变革并非简单的工具优化，而是一场触及核心的生态变革。以Transformer架构为核心的多模态生成模型，如Midjourney 6和Stable Diffusion 3，正在彻底改变创意流程，推动整个产业链向数字化迈进。
-
-#### 数学：人工智能技术发展的基石与核心驱动力
-
-https://mp.weixin.qq.com/s/GEMMn-RXUWwlurH5Sd21TA
-
-数学与AI的交叉应用不仅限于理论，还体现在教育与实践层面：  
-
-- **课程设计**：高校开设“数据科学的数学基础”课程，涵盖矩阵分析、信息论、凸优化等内容，为AI算法提供数学支撑。  
-- **研究前沿**：概率图模型（如隐马尔可夫链）结合概率论与图论，用于序列预测；微分方程驱动神经ODE网络，拓展深度学习架构。  
-
-#### 农业新质生产力：内涵特征、发展路径与制度创新
-
-https://mp.weixin.qq.com/s/Wx-U3qRTgN-nh6ctItGR8A
-
-农业新质生产力是传统农业生产要素在技术革命驱动下的质态跃迁，其本质是通过技术突破、要素重组与制度创新的协同作用，实现农业生产效率与资源利用效率的范式性变革。
-
-#### **能源市场模拟器**
-
-https://gitee.com/deepcy/energy-market
-
-模拟发电商和消费者的市场行为
-
-计算市场出清价格和数量
-
-支持手动配置和文件配置两种模式
-
-提供可视化分析功能
-
-#### 循环经济分析系统
-
-https://gitee.com/deepcy/circular-economy
-
-这是一个用于分析以旧换新循环经济的算法程序，包含经济价值计算、环境效益评估和回收网络优化三大功能。
-
-1. **经济评估** - 计算产品回收的经济价值
-2. **环境评估** - 评估循环模式的环境效益
-3. **网络优化** - 提供回收网络优化建议
-
-#### 分层决策智能体系统
-
-https://gitee.com/deepcy/multi-agent-system-technology
-
-本项目实现了一个分层决策架构的智能体系统，支持：
-
-- 分层决策链（Manager/Worker模式）
-- 本地和分布式训练
-- 强化学习（Q学习）
-
-##### 核心类
-
-1. `DecisionLayer` - 决策层基类
-2. `Worker` - 工作层智能体，实现具体行为策略
-3. `Manager` - 管理层智能体，负责宏观决策
-
-##### 分布式训练
-
-- `ParameterServer` - 参数服务器
-- `DistributedWorker` - 分布式工作节点
-
-#### 科技趋势分析系统 (BBC)
-
-https://gitee.com/deepcy/trend-analysis-system
-
-BBC (Big Bang of Computing) 是一个科技趋势分析系统，通过分析arXiv论文数据，结合LLM增强分析，提供科技趋势的可视化和洞察。
-
-##### 功能特性
-
-- 📊 arXiv论文数据自动获取与分析
-- 🤖 LLM增强的论文摘要与趋势分析
-- 📈 多维度的趋势可视化
-- 📝 自动生成分析报告(PDF)
-- 🚀 REST API服务
-
-
-
-#### 经济模拟系统
-
-https://gitee.com/deepcy/EconCore
-
-CYCU经济工程是一个高性能经济模拟系统，包含智能体框架、经济模拟引擎和素数计算核心。系统主要用于经济模型仿真和数据分析。
-
-##### 模块组成
-
-1. **PrimeCore** - 高性能素数计算核心
-   - 提供素数判断、区间素数获取、素数密度计算等功能
-   - 支持并行计算(OpenMP)
-   - 提供C接口供外部调用
-2. **EconCore** - 经济模拟引擎核心
-3. **AgentCore** - 智能体框架
-4. **PrimeCalculator** - C#应用程序
-   - 提供用户界面和计算控制
-   - 调用PrimeCore进行计算
-
-#### JavaScript 多智能体研究框架
-
-- Agent基类：定义智能体的基本行为和属性  
-- Environment类：管理智能体交互的环境  
-- 消息传递系统：支持智能体间通信  
-- 可扩展架构：通过继承实现自定义智能体行为  
-
-**研究扩展功能：**
-
-- ResearchTask：研究任务管理与追踪  
-- ResearchEnvironment：支持知识共享的研究环境  
-- 专业研究智能体：
-  - LiteratureReviewAgent：文献综述
-  - DataAnalysisAgent：数据分析
-  - PaperWritingAgent：论文写作
-  - VisualizationAgent：数据可视化
-- 知识库系统：集中管理研究发现  
-- 任务分配与协作机制  
-- 学术论文自动生成系统
-
-
-
-【腾讯文档】留言板
-https://docs.qq.com/aio/DQVVjemFqaUVFck5H
-
-
-
-*和我聊天微：cy321one*
-
-*反馈邮箱：samhoclub@163.com
-
-*公众号：尘渊文化*
-
-*官网：www.cycu.top*
-
-知乎主页：
-
-https://www.zhihu.com/people/pan-53-76
-
+<div align="center">
+  <h1>🌌 尘渊文化 (Chenyuan Culture)</h1>
+  <p><strong>数据驱动时代的战略级智囊平台</strong></p>
+  <p>
+    <a href="#技术方向">技术方向</a> •
+    <a href="#企业资质">企业资质</a> •
+    <a href="#核心架构">核心架构</a> •
+    <a href="#服务矩阵">服务矩阵</a> •
+    <a href="#项目案例">项目案例</a> •
+    <a href="#联系我们">联系我们</a>
+  </p>
+</div>
+---
+## 📌 技术方向
+![AI](https://img.shields.io/badge/AI-时序AI-blue) 
+![Robotics](https://img.shields.io/badge/Robotics-具身智能-green) 
+![Causal](https://img.shields.io/badge/Causal-因果表征-orange) 
+
+![Humanities](https://img.shields.io/badge/Humanities-人文智能-purple)
+---
+## 🏆 企业资质
+| 资质类型 | 认证机构/平台                    |
+| -------- | -------------------------------- |
+| 开源社区 | samho开源国际设计创意社区创始人  |
+| 合作伙伴 | ModelScope魔搭社区国际站合作伙伴 |
+| 行业联盟 | 四川省西部专精特新企业联盟成员   |
+| 校企合作 | 党校校企合作优秀单位             |
+| 技术认证 | 人工智能元认知研发重点企业       |
+| 研究领域 | AI+交叉学科专项研究单位          |
+---
+## 🌟 公司介绍
+> 作为数据驱动时代的战略级智囊平台，「尘渊·无界智策」深度融合人工智能、深度学习、量子计算及多模态分析技术，致力于为企业提供从数据挖掘到商业决策的全链路解决方案。通过构建智能模型与高价值数据集，我们赋能客户在复杂市场环境中实现精准洞察、动态优化与前沿技术布局。
+---
+## 🧠 核心架构
+### 🔬 技术理论基础
+融合钱学森系统科学与德里达解构主义，构建可验证的五层级科学架构
+### 🚀 三大核心技术
+#### 1. 混合专家模型（MoE）赋能决策分析
+```python
+# 核心参数
+model_params = 670  # 十亿参数
+activation_rate = "15%-20%"  # 推理时参数调用率
+processing_speed = 450  # tokens/s
+accuracy_improvement = 12.7  # BLEU评分提升(%)
+# 关键机制
+- 动态参数激活
+- 异步训练策略
+- 梯度分配策略
+```
+
+#### 2. 汉字AI图谱与概念模型融合
+| 解析层级   | 技术实现                   | 功能特点                 |
+| ---------- | -------------------------- | ------------------------ |
+| 字形解析层 | CNN网络提取汉字象形特征    | 建立"图像语义向量"数据库 |
+| 概念关联层 | 基于《说文解字》数字化资源 | 动态更新概念知识图谱     |
+| 语境理解层 | MoE架构多专家协同          | 解决中文多义性问题       |
+#### 3. 语言模型工业化应用
+- **超长文本处理**：256K tokens支持
+- **核心能力**：
+  - 跨文档实体识别
+  - 行业报告关键信息抽取（效率提升300%）
+  - 上市公司财报分析
+  - 竞品情报挖掘
+---
+## 📊 服务矩阵
+| 服务模块       | 技术实现                    | 商业价值                | 性能指标 |
+| -------------- | --------------------------- | ----------------------- | -------- |
+| 行业趋势预测   | 时序分析+行业知识图谱推理   | 准确率提升22%           | 📈        |
+| 消费者行为建模 | 多模态日志分析+隐马尔可夫链 | 用户生命周期预测误差≤8% | 👥        |
+| 市场竞争模拟   | 博弈论模型+蒙特卡洛仿真     | 策略预演置信度91%       | 🎯        |
+| 供应链优化     | 运筹学算法+实时物流数据融合 | 库存周转率优化15%-28%   | 🚚        |
+---
+## 🛠️ 项目案例
+### 🧠 核心AI模型
+| 项目名称            | 技术特点         | 链接                                                         |
+| ------------------- | ---------------- | ------------------------------------------------------------ |
+| 因果发现AI          | 因果表征网络实现 | [GitHub](https://github.com/johboby/AI-causal-discovery-network-implementation) |
+| 分层推理模型(HRM)   | 多层级决策架构   | [GitHub](https://github.com/johboby/Hierarchical)            |
+| 文明演化AI系统(CAF) | 古今智慧融合框架 | [GitHub](https://github.com/johboby/Civilization)            |
+### 📈 行业分析系统
+| 系统                   | 功能                        | 技术亮点     |
+| ---------------------- | --------------------------- | ------------ |
+| 能源市场模拟器         | 发电商行为模拟/市场出清计算 | 可视化分析   |
+| 循环经济分析系统       | 经济价值计算/环境效益评估   | 回收网络优化 |
+| 经济模拟系统(EconCore) | 高性能经济仿真引擎          | 素数计算核心 |
+| 科技趋势分析系统(BBC)  | arXiv论文分析/LLM增强       | PDF报告生成  |
+### 📚 研究报告
+- [全球价值链重塑：2024中国工业发展展望](https://mp.weixin.qq.com/s/9Uv7UmJbzy9AQ9emBtfiqA)
+- [新质生产力分析平台](https://mp.weixin.qq.com/s/q6HymkUNoRQJn8gf-yU_iw)
+- [碳排放智能分析系统](https://mp.weixin.qq.com/s/qPcukA00DHd76ByCfTliFw)
+- [易经占卜数字化重构](https://mp.weixin.qq.com/s/igNdpjM6SS16MNVMkIUc_Q)
+- [创意经济：技术驱动与多维融合](https://mp.weixin.qq.com/s/QiUjuHApOyno1hdjcVNIeg)
+---
+## 🌐 开源仓库
+### 🔥 热门项目
+```bash
+# 能源市场模拟器
+git clone https://gitee.com/deepcy/energy-market
+# 循环经济分析系统
+git clone https://gitee.com/deepcy/circular-economy
+# 分层决策智能体系统
+git clone https://gitee.com/deepcy/multi-agent-system-technology
+# 科技趋势分析系统
+git clone https://gitee.com/deepcy/trend-analysis-system
+```
+### 🤖 智能体框架
+```javascript
+// 核心类结构
+class DecisionLayer { /* 决策层基类 */ }
+class Worker extends DecisionLayer { /* 工作层智能体 */ }
+class Manager extends DecisionLayer { /* 管理层智能体 */ }
+// 分布式训练
+class ParameterServer { /* 参数服务器 */ }
+class DistributedWorker { /* 分布式工作节点 */ }
+```
+---
+## 📞 联系我们
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="200">
+        <a href="http://www.cycu.top">
+          <img src="https://img.shields.io/badge/官网-www.cycu.top-blue" alt="官网">
+        </a>
+      </td>
+      <td align="center" width="200">
+        <a href="mailto:samhoclub@163.com">
+          <img src="https://img.shields.io/badge/邮箱-samhoclub@163.com-green" alt="邮箱">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="200">
+        <img src="https://img.shields.io/badge/微信-cy321one-success" alt="微信">
+      </td>
+      <td align="center" width="200">
+        <a href="https://www.zhihu.com/people/pan-53-76">
+          <img src="https://img.shields.io/badge/知乎-主页-blueviolet" alt="知乎">
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+### 📝 互动渠道
+- **留言板**：[腾讯文档留言板](https://docs.qq.com/aio/DQVVjemFqaUVFck5H)
+- **公众号**：尘渊文化
+---
+<div align="center">
+  <p>🌟 融合古今智慧，引领智能未来 🌟</p>
+  <p>Made with ❤️ by 尘渊文化团队</p>
+</div>
