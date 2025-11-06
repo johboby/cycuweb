@@ -10,7 +10,7 @@
     <a href="#联系我们">联系我们</a>
   </p>
 </div>
-## 📌 技术方向
+📌 技术方向
 ![AI](https://img.shields.io/badge/AI-时序AI-blue) 
 ![Robotics](https://img.shields.io/badge/Robotics-具身智能-green) 
 ![Causal](https://img.shields.io/badge/Causal-因果表征-orange) 
