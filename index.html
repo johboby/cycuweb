@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尘渊文化 - 时序AI与具身智能专家</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover, nav a.active {
+            background: #667eea;
+            color: white;
+        }
+        
+        .page {
+            display: none;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        .page.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        h3 {
+            color: #764ba2;
+            margin: 1.5rem 0 1rem 0;
+            font-size: 1.4rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-card {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .feature-card h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .services-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .services-table th,
+        .services-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .services-table th {
+            background: #667eea;
+            color: white;
+        }
+        
+        .services-table tr:hover {
+            background: #f8f9ff;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .project-card {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-card h4 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .contact-item {
+            background: #f8f9ff;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #e0e6ff;
+        }
+        
+        .contact-item strong {
+            display: block;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            border-left: 5px solid #667eea;
+        }
+        
+        .tech-points {
+            list-style: none;
+            margin: 1rem 0;
+        }
+        
+        .tech-points li {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .tech-points li:before {
+            content: "•";
+            color: #667eea;
+            position: absolute;
+            left: 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            color: #666;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>公司：尘渊文化</h1>
+            <p class="subtitle">技术方向：时序AI；具身智能；因果表征；人文智能等</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link active" data-page="home">首页</a></li>
+                <li><a href="#" class="nav-link" data-page="about">关于我们</a></li>
+                <li><a href="#" class="nav-link" data-page="technology">技术架构</a></li>
+                <li><a href="#" class="nav-link" data-page="services">服务矩阵</a></li>
+                <li><a href="#" class="nav-link" data-page="projects">项目案例</a></li>
+                <li><a href="#" class="nav-link" data-page="contact">联系我们</a></li>
+            </ul>
+        </nav>
+        
+        <!-- 首页 -->
+        <div id="home" class="page active">
+            <h2>欢迎来到尘渊文化</h2>
+            <p>作为数据驱动时代的战略级智囊平台，「尘渊·无界智策」深度融合人工智能、深度学习、量子计算及多模态分析技术，致力于为企业提供从数据挖掘到商业决策的全链路解决方案。</p>
+            
+            <div class="highlight">
+                <h3>企业资质</h3>
+                <ul class="tech-points">
+                    <li>samho开源国际设计创意社区创始人</li>
+                    <li>ModelScope魔搭社区国际站合作伙伴</li>
+                    <li>四川省西部专精特新企业联盟成员</li>
+                    <li>党校校企合作优秀单位</li>
+                    <li>商业学术领先企业</li>
+                    <li>人工智能 元认知研发重点企业</li>
+                    <li>AI+交叉学科专项研究单位</li>
+                </ul>
+            </div>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <h4>时序AI</h4>
+                    <p>先进的时间序列分析技术，预测未来趋势</p>
+                </div>
+                <div class="feature-card">
+                    <h4>具身智能</h4>
+                    <p>物理世界与数字世界的智能融合</p>
+                </div>
+                <div class="feature-card">
+                    <h4>因果表征</h4>
+                    <p>深入理解事物间的因果关系</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 关于我们 -->
+        <div id="about" class="page">
+            <h2>关于我们</h2>
+            <p>作为数据驱动时代的战略级智囊平台，「尘渊·无界智策」深度融合人工智能、深度学习、量子计算及多模态分析技术，致力于为企业提供从数据挖掘到商业决策的全链路解决方案。通过构建智能模型与高价值数据集，我们赋能客户在复杂市场环境中实现精准洞察、动态优化与前沿技术布局。</p>
+            
+            <h3>企业使命</h3>
+            <p>通过前沿AI技术，助力企业实现数字化转型和智能化升级</p>
+            
+            <h3>核心价值观</h3>
+            <ul class="tech-points">
+                <li>技术创新驱动发展</li>
+                <li>客户价值至上</li>
+                <li>跨学科融合创新</li>
+                <li>可持续发展</li>
+            </ul>
+        </div>
+        
+        <!-- 技术架构 -->
+        <div id="technology" class="page">
+            <h2>技术架构优势</h2>
+            <p>融合钱学森系统科学与德里达解构主义，构建可验证的五层级科学架构。</p>
+            
+            <h3>1. 混合专家模型（MoE）赋能决策分析</h3>
+            <p>采用动态参数激活机制与异步训练策略，实现670亿参数规模的分布式布局。每次推理仅调用15%-20%参数，在保持450 tokens/s处理速度的同时，显著提升多任务场景下的分析精度（较传统模型提升12.7% BLEU评分）。该架构通过专家模块的梯度分配策略，高频商业问题匹配高密度参数集群，长尾需求则由轻量化模块精准响应。</p>
+            
+            <h3>2. 汉字AI图谱与概念模型融合</h3>
+            <p>构建三级语义解析体系：</p>
+            <ul class="tech-points">
+                <li><strong>字形解析层</strong>：CNN网络提取汉字象形特征，建立"图像语义向量"数据库</li>
+                <li><strong>概念关联层</strong>：基于《说文解字》数字化资源，形成动态更新的概念知识图谱</li>
+                <li><strong>语境理解层</strong>：MoE架构下的多专家协同，解决中文多义性问题（如"花"的7种语义场景）</li>
+            </ul>
+            
+            <h3>3. 语言模型工业化应用</h3>
+            <p>开发256K tokens超长文本处理能力，支持复杂商业文档的语义解构。通过跨文档实体识别技术，实现行业报告的关键信息抽取效率提升300%，特别适用于上市公司财报分析与竞品情报挖掘。</p>
+        </div>
+        
+        <!-- 服务矩阵 -->
+        <div id="services" class="page">
+            <h2>定制化服务矩阵</h2>
+            <table class="services-table">
+                <thead>
+                    <tr>
+                        <th>服务模块</th>
+                        <th>技术实现</th>
+                        <th>商业价值</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>行业趋势预测</td>
+                        <td>时序分析+行业知识图谱推理</td>
+                        <td>准确率较传统模型提升22%</td>
+                    </tr>
+                    <tr>
+                        <td>消费者行为建模</td>
+                        <td>多模态日志分析+隐马尔可夫链</td>
+                        <td>用户生命周期价值预测误差≤8%</td>
+                    </tr>
+                    <tr>
+                        <td>市场竞争模拟</td>
+                        <td>博弈论模型+蒙特卡洛仿真</td>
+                        <td>策略预演置信度达91%</td>
+                    </tr>
+                    <tr>
+                        <td>供应链优化</td>
+                        <td>运筹学算法+实时物流数据融合</td>
+                        <td>库存周转率优化15%-28%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- 项目案例 -->
+        <div id="projects" class="page">
+            <h2>项目案例</h2>
+            
+            <div class="projects">
+                <div class="project-card">
+                    <h4>因果发现AI案例</h4>
+                    <p>Github项目地址：https://github.com/johboby/AI-causal-discovery-network-implementation</p>
+                </div>
+                
+                <div class="project-card">
+                    <h4>Hierarchical Reasoning Model (HRM)</h4>
+                    <p>分层推理模型项目地址：https://github.com/johboby/Hierarchical</p>
+                </div>
+                
+                <div class="project-card">
+                    <h4>文明演化AI系统</h4>
+                    <p>项目地址：https://github.com/johboby/Civilization</p>
+                    <p>实现古今智慧与现代科技的共振</p>
+                </div>
+                
+                <div class="project-card">
+                    <h4>全球价值链重塑研究</h4>
+                    <p>微信文章：https://mp.weixin.qq.com/s/9Uv7UmJbzy9AQ9emBtfiqA</p>
+                </div>
+                
+                <div class="project-card">
+                    <h4>中国城市文化研究</h4>
+                    <p>微信文章：https://mp.weixin.qq.com/s/eZELg5N526aQ6CXAb_4J0g</p>
+                </div>
+                
+                <div class="project-card">
+                    <h4>新质生产力分析平台</h4>
+                    <p>微信文章：https://mp.weixin.qq.com/s/q6HymkUNoRQJn8gf-yU_iw</p>
+                </div>
+                
+                <div class="project-card">
+                    <h4>碳排放智能分析与优化</h4>
+                    <p>微信文章：https://mp.weixin.qq.com/s/qPcukA00DHd76ByCfTliFw</p>
+                    <p>CarbonChat系统架构创新</p>
+                </div>
+                
+                <div class="project-card">
+                    <h4>易经占卜系统数字化重构</h4>
+                    <p>微信文章：https://mp.weixin.qq.com/s/igNdpjM6SS16MNVMkIUc_Q</p>
+                </div>
+                
+                <div class="project-card">
+                    <h4>创意经济技术驱动</h4>
+                    <p>微信文章：https://mp.weixin.qq.com/s/QiUjuHApOyno1hdjcVNIeg</p>
+                </div>
+                
+                <div class="project-card">
+                    <h4>能源市场模拟器</h4>
+                    <p>Gitee项目：https://gitee.com/deepcy/energy-market</p>
+                    <p>模拟发电商和消费者的市场行为</p>
+                </div>
+                
+                <div class="project-card">
+                    <h4>循环经济分析系统</h4>
+                    <p>Gitee项目：https://gitee.com/deepcy/circular-economy</p>
+                </div>
+                
+                <div class="project-card">
+                    <h4>分层决策智能体系统</h4>
+                    <p>Gitee项目：https://gitee.com/deepcy/multi-agent-system-technology</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 联系我们 -->
+        <div id="contact" class="page">
+            <h2>联系我们</h2>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>微信</strong>
+                    <p>cy321one</p>
+                </div>
+                <div class="contact-item">
+                    <strong>邮箱</strong>
+                    <p>samhoclub@163.com</p>
+                </div>
+                <div class="contact-item">
+                    <strong>公众号</strong>
+                    <p>尘渊文化</p>
+                </div>
+                <div class="contact-item">
+                    <strong>官网</strong>
+                    <p>www.cycu.top</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 2rem; text-align: center;">
+                <h3>知乎主页</h3>
+                <p><a href="https://www.zhihu.com/people/pan-53-76" target="_blank" style="color: #667eea; text-decoration: none;">https://www.zhihu.com/people/pan-53-76</a></p>
+                
+                <h3>留言板</h3>
+                <p><a href="https://docs.qq.com/aio/DQVVjemFqaUVFck5H" target="_blank" style="color: #667eea; text-decoration: none;">腾讯文档留言板</a></p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 尘渊文化. 专注于时序AI、具身智能、因果表征、人文智能等前沿技术领域.</p>
+        </footer>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const pages = document.querySelectorAll('.page');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetPage = this.getAttribute('data-page');
+                    
+                    // 移除所有活动状态
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    pages.forEach(p => p.classList.remove('active'));
+                    
+                    // 添加活动状态到当前点击的链接和对应页面
+                    this.classList.add('active');
+                    document.getElementById(targetPage).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+
+
