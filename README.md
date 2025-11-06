@@ -11,12 +11,12 @@
   </p>
 </div>
 📌 技术方向
+
 ![AI](https://img.shields.io/badge/AI-时序AI-blue) 
 ![Robotics](https://img.shields.io/badge/Robotics-具身智能-green) 
 ![Causal](https://img.shields.io/badge/Causal-因果表征-orange) 
-
 ![Humanities](https://img.shields.io/badge/Humanities-人文智能-purple)
----
+
 ## 🏆 企业资质
 | 资质类型 | 认证机构/平台                    |
 | -------- | -------------------------------- |
